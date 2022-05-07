@@ -1,3 +1,11 @@
+! Xresources can be ran automatically through startx like so:
+! [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+! Programs like urxvt can also be configured through xinitrc like so:
+! xrdb -merge << "EOF"
+! URxvt*font:xft:monospace:size=12
+! URxvt*scrollBar:false
+! EOF
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
